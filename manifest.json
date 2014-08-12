@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "笔记",
+  "description": "该插件由lz折腾,如有技术问题请email：bug#ilz.me",
+  "version": "0.1",
+"icons":{
+         "48":"icon48.png"
+     },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions":["<all_urls>",
+      "notifications",
+      "storage"],
+//  "content_scripts":[{
+//         "matches":["file:///*/*","http://*/*","https://*/*"],
+//         "js":["js/inject.js","js/angular.min.js","js/controller.js"],
+//         "run_at":"document_end"
+//     }
+//  ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

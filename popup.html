@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>笔记</title>
+    <meta charset="UTF-8">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/ng-ckeditor.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/ckeditor.js"></script>
+    <script src="./js/ng-ckeditor.min.js"></script>
+    <!--<script src="./ng-ckeditor/src/scripts/02-directive.js"></script>-->
+    <script src="./js/controller.js"></script>
+</head>
+<body style="width:750px" ng-app="Note">
+<div class="container" ng-controller="LZ">
+    <div class="col-xs-1">ddd</div>
+    <div class="col-xs-11">
+        <textarea ckeditor="editorOptions" name="editor" ng-model="context"></textarea>
+        <button ng-click="save()">Save</button>
+    </div>
+</div>
+</body>
+</html>
